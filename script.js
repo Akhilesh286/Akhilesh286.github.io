@@ -55,7 +55,7 @@ const p_track = document.querySelector(".p-slider");
 const p_items = document.querySelectorAll(".p-card");
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
-const currentWidth = document.querySelector(".p-card").clientWidth;
+const currentWidth = document.querySelector(".p-slider").clientWidth;
 let currentIndex = 0;
 console.log(currentWidth);
 
