@@ -1,1 +1,198 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fixed Sidebars with Snap Scroll</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+</head>
+<body>
+
+<!-- Left Sidebar -->
+<div class="sidebar-left">
+  <div class="nav-item active" data-section="hero">🏠 <span>Me</span></div>
+  <div class="nav-item" data-section="about">👤 <span>About</span></div>
+  <div class="nav-item" data-section="projects">💼 <span>Projects</span></div>
+  <div class="nav-item" data-section="skills">🎓 <span>Skills</span></div>
+  <div class="nav-item" data-section="certificate">📖 <span>Certificates</span></div>
+  <div class="nav-item" data-section="contact">📞 <span>Contact</span></div>
+</div>
+
+<!-- Main Content -->
+<div class="main-content" id="mainContent">
+  <section id="hero">
+    <div class="hero">
+        <div class="h-title">
+          <h1>Hi, I’m <span>Akhilesh</span></h1>
+          <h2>Full-Stack Developer</h2>
+          <p>Django | React | PostgreSQL</p>
+        </div>
+        <img src="asset/hero-illustration.svg" class="h-img" alt="">
+    </div>
+  </section>
+  <section id="about">
+  <div class="about">
+    <div class="a-title">
+      <h1>About</h1>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat facilis tenetur accusamus distinctio vitae iure deleniti ipsam in ipsa et. Libero quidem ullam nisi maxime eos ipsum suscipit quisquam aliquam.
+    Ipsam, sunt! Nulla, inventore ex. Deleniti ducimus tempore voluptatum ad ut placeat rem accusamus, nam provident perferendis, quidem nulla voluptates? Soluta asperiores nostrum totam voluptate vel ea aspernatur iusto exercitationem!
+    Ipsa quidem nemo tenetur ex repudiandae ducimus dolore impedit dolorem rerum eligendi iure, voluptates reiciendis. Maxime voluptatibus excepturi deleniti, nam rem nobis, quae incidunt reiciendis esse doloremque praesentium provident </p>
+  </div>
+  </section>
+  <section id="projects">
+  <!-- Projects Section -->
+  <div class="projects">
+
+  <div class="p-projects">
+  <div class="p-slider">
+  <div class="p-card">
+    <div class="p-date">2024 — PRESENT</div>
+    <h3 class="p-title">
+      E-commerce Shopping App 
+    </h3>
+    <p class="p-description">
+      Built a full-stack shopping site with role-based access for owners and users.
+      Features include product management, cart system, and real-time chat between
+      users and store owners.
+    </p>
+    <div class="p-tags">
+      <span>Python</span>
+      <span>Django</span>
+      <span>React</span>
+      <span>PostgreSQL</span>
+    </div>
+  </div>
+
+  <div class="p-card">
+    <div class="p-date">2024 — PRESENT</div>
+    <h3 class="p-title">
+      E-commerce Shopping App 
+    </h3>
+    <p class="p-description">
+      Built a full-stack shopping site with role-based access for owners and users.
+      Features include product management, cart system, and real-time chat between
+      users and store owners.
+    </p>
+    <div class="p-tags">
+      <span>Python</span>
+      <span>Django</span>
+      <span>React</span>
+      <span>PostgreSQL</span>
+    </div>
+  </div>
+  <div class="p-card">
+    <div class="p-date">2024 — PRESENT</div>
+    <h3 class="p-title">
+      E-commerce Shopping App 
+    </h3>
+    <p class="p-description">
+      Built a full-stack shopping site with role-based access for owners and users.
+      Features include product management, cart system, and real-time chat between
+      users and store owners.
+    </p>
+    <div class="p-tags">
+      <span>Python</span>
+      <span>Django</span>
+      <span>React</span>
+      <span>PostgreSQL</span>
+    </div>
+  </div>
+</div>
+</div>
+<div class="p-btn">
+  <button id="prev">&#8592;</button>
+  <button id="next">&#8594;</button>
+</div>
+  </div>
+
+  </section>
+
+  </section>
+  <section id="skills">
+    <div class="skills">
+      <div class="s-top">
+        <ul class="s-navbar">
+          <li data-target="language">Language</li>
+          <li class="active" data-target="backend">Backend</li>
+          <li data-target="frontend">Frontend</li>
+          <li data-target="tools">Tools</li>
+        </ul>
+      </div>
+      
+      <div class="s-body">
+  <div id="language" class="s-content">
+  
+  </div>
+  <div id="backend" class="s-content active">
+    <div class="s-c-skills">
+    <div class="skill">
+      <div class="skill-label">
+        <span>Python</span>
+
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 80%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-label">
+        <span>Python</span>
+        <span>80%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 80%;"></div>
+      </div>
+    </div>
+</div>
+
+  </div>
+  <div id="frontend" class="s-content">
+    <h2>Frontend</h2>
+    <p>Content for Frontend section...</p>
+  </div>
+  <div id="tools" class="s-content">
+    <h2>Tools</h2>
+    <p>Content for Tools section...</p>
+  </div>
+</div>
+
+    </div>
+  </section>
+  <section id="certificate">
+    <div class="certificates">
+      <div class="c-text">
+        <h1>CERTIFICATES</h1>
+      </div>
+<div class="c-body">
+
+  <div class="carousel-container" id="carousel">
+    <div class="center-line" aria-hidden="true"></div>
+    <div class="spacer" aria-hidden="true"></div>
+
+      <!-- REAL ITEMS -->
+      <div class="carousel-item">Item 1</div>
+      <div class="carousel-item">Item 2</div>
+      <div class="carousel-item">Item 3</div>
+      <div class="carousel-item">Item 4</div>
+      <div class="carousel-item">Item 5</div>
+      <div class="carousel-item">Item 6</div>
+      <div class="carousel-item">Item 7</div>
+      
+      <div class="spacer" aria-hidden="true"></div>
+    </div>
+  </div>    
+
+  </section>
+  <section id="contact">
+    
+  </section>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
