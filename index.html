@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fixed Sidebars with Snap Scroll</title>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
 </head>
 <body>
 
@@ -35,11 +34,11 @@
   <section id="about">
   <div class="about">
     <div class="a-title">
-      <h1>About</h1>
+      <h1>ABOUT</h1>
     </div>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat facilis tenetur accusamus distinctio vitae iure deleniti ipsam in ipsa et. Libero quidem ullam nisi maxime eos ipsum suscipit quisquam aliquam.
-    Ipsam, sunt! Nulla, inventore ex. Deleniti ducimus tempore voluptatum ad ut placeat rem accusamus, nam provident perferendis, quidem nulla voluptates? Soluta asperiores nostrum totam voluptate vel ea aspernatur iusto exercitationem!
-    Ipsa quidem nemo tenetur ex repudiandae ducimus dolore impedit dolorem rerum eligendi iure, voluptates reiciendis. Maxime voluptatibus excepturi deleniti, nam rem nobis, quae incidunt reiciendis esse doloremque praesentium provident </p>
+    <p>I’m a self-taught fullstack developer specializing in Django, React, and PostgreSQL. I build scalable, user-friendly applications and thrive on learning new technologies.</p>
+    <p>My journey began with Python scripts and evolved into full-fledged projects like real-time chat apps and role-based e-commerce platforms. I focus on writing clean, efficient code that delivers real-world results</p>
+    <p>I’m now looking to bring my skills into a professional environment, contribute to meaningful projects, and grow as part of a collaborative team.</p>
   </div>
   </section>
   <section id="projects">
@@ -49,15 +48,22 @@
   <div class="p-projects">
   <div class="p-slider">
   <div class="p-card">
-    <div class="p-date">2024 — PRESENT</div>
+    <div class="p-date">2025</div>
     <h3 class="p-title">
-      E-commerce Shopping App 
+      Chatting Platform 
     </h3>
     <p class="p-description">
-      Built a full-stack shopping site with role-based access for owners and users.
-      Features include product management, cart system, and real-time chat between
-      users and store owners.
+      Built a real-time chat platform with Django Channels and WebSockets,
+      featuring JWT authentication via Django REST Framework.
+      Optimized active chat session queries using PostgreSQL indexes,
+      and developed a responsive React UI.
     </p>
+    
+    <div class="p-repo">
+      <a href="/">view
+        <i class="bi bi-box-arrow-up-right"></i>
+      </a>
+    </div>
     <div class="p-tags">
       <span>Python</span>
       <span>Django</span>
@@ -67,24 +73,31 @@
   </div>
 
   <div class="p-card">
-    <div class="p-date">2024 — PRESENT</div>
+    <div class="p-date">2024</div>
     <h3 class="p-title">
-      E-commerce Shopping App 
+      Idea Sharing Platform
     </h3>
     <p class="p-description">
-      Built a full-stack shopping site with role-based access for owners and users.
-      Features include product management, cart system, and real-time chat between
-      users and store owners.
+      Developed a blog platform with a Flask backend and PostgreSQL database, 
+      featuring CRUD operations for posts, user authentication. 
+      Designed a responsive UI with HTML, CSS, and JavaScript,
+      and optimized SQL queries for faster content retrieval using SQLAlchemy.
     </p>
+    <div class="p-repo">
+      <a href="/">view
+        <i class="bi bi-box-arrow-up-right"></i>
+      </a>
+    </div>
     <div class="p-tags">
       <span>Python</span>
-      <span>Django</span>
-      <span>React</span>
+      <span>Flask</span>
+      <span>HTML / CSS</span>
       <span>PostgreSQL</span>
+      <span>Sql-Alchemy</span>
     </div>
   </div>
   <div class="p-card">
-    <div class="p-date">2024 — PRESENT</div>
+    <div class="p-date">2022</div>
     <h3 class="p-title">
       E-commerce Shopping App 
     </h3>
@@ -93,14 +106,24 @@
       Features include product management, cart system, and real-time chat between
       users and store owners.
     </p>
+    <div class="p-repo">
+      <a href="/">view
+        <i class="bi bi-box-arrow-up-right"></i>
+      </a>
+    </div>
     <div class="p-tags">
       <span>Python</span>
       <span>Django</span>
-      <span>React</span>
-      <span>PostgreSQL</span>
+      <span>HTML / CSS</span>
+      <span>SQLITE</span>
+      <span>Bootstrap</span>
+      <span>Jquery</span>
     </div>
   </div>
 </div>
+</div>
+<div class="p-headding">
+  <h1>PROJECTS</h1>
 </div>
 <div class="p-btn">
   <button id="prev">&#8592;</button>
@@ -115,47 +138,267 @@
     <div class="skills">
       <div class="s-top">
         <ul class="s-navbar">
-          <li data-target="language">Language</li>
-          <li class="active" data-target="backend">Backend</li>
+          <li class="active" data-target="language">Language</li>
+          <li  data-target="backend">Backend</li>
           <li data-target="frontend">Frontend</li>
           <li data-target="tools">Tools</li>
         </ul>
       </div>
-      
-      <div class="s-body">
-  <div id="language" class="s-content">
-  
-  </div>
-  <div id="backend" class="s-content active">
+  <div class="s-body">
+  <div id="language" class="s-content active">
     <div class="s-c-skills">
+      <div class="s-c-skills-inner">
+      <div class="skill">
+        <div class="skill-label">
+          <span>PYTHON</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--fill: 90%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label">
+          <span>JAVASCRIPT</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--fill: 80%;"></div>
+        </div>
+      </div>
+      
+      <div class="skill">
+        <div class="skill-label">
+          <span>JAVA</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--fill: 70%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label">
+          <span>C++</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--fill: 70%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label">
+          <span>BASH</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--fill: 40%;"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div id="backend" class="s-content">
+    <div class="s-c-skills">
+          <div class="s-c-skills-inner">
+
     <div class="skill">
       <div class="skill-label">
-        <span>Python</span>
+        <span>DJANGO</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 90%;"></div>
+      </div>
+    </div>
+    
+    <div class="skill">
+      <div class="skill-label">
+        <span>FLASK</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 90%;"></div>
+      </div>
+    </div>
 
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>POSTGRESQL</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 70%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>FAST-API</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 60%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>KIVYMD</span>
       </div>
       <div class="progress-bar">
         <div class="progress-fill" style="--fill: 80%;"></div>
       </div>
     </div>
+
     <div class="skill">
       <div class="skill-label">
-        <span>Python</span>
-        <span>80%</span>
+        <span>SQLITE</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 80%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+
+      <div class="skill-label">
+        <span>MYSQL</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 50%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>MONGODB</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 50%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>NODE</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 20%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>SQL-ALCHEMY</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 50%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+
+      <div class="skill-label">
+        <span>TELEGRAM-BOT</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 70%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>QT CREATOR</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 20%;"></div>
+      </div>
+    </div>
+
+
+</div>
+  </div>
+
+  </div>
+  <div id="frontend" class="s-content">
+    <div class="s-c-skills">
+          <div class="s-c-skills-inner">
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>HTML / CSS</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 90%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>REACT</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 80%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>JQUERY</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 60%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>BOOTSTRAP</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 60%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>SCSS</span>
       </div>
       <div class="progress-bar">
         <div class="progress-fill" style="--fill: 80%;"></div>
       </div>
     </div>
 </div>
-
-  </div>
-  <div id="frontend" class="s-content">
-    <h2>Frontend</h2>
-    <p>Content for Frontend section...</p>
+  </div>  
   </div>
   <div id="tools" class="s-content">
-    <h2>Tools</h2>
-    <p>Content for Tools section...</p>
+  <div class="s-c-skills">
+          <div class="s-c-skills-inner">
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>DOCKER</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 50%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>GIT</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 80%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label">
+        <span>REDIS</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="--fill: 60%;"></div>
+      </div>
+    </div>
+
+</div>
+  </div>
   </div>
 </div>
 
@@ -173,13 +416,17 @@
     <div class="spacer" aria-hidden="true"></div>
 
       <!-- REAL ITEMS -->
-      <div class="carousel-item">Item 1</div>
-      <div class="carousel-item">Item 2</div>
-      <div class="carousel-item">Item 3</div>
-      <div class="carousel-item">Item 4</div>
-      <div class="carousel-item">Item 5</div>
-      <div class="carousel-item">Item 6</div>
-      <div class="carousel-item">Item 7</div>
+      <div class="carousel-item">Python - Brototype (2021)</div>
+      <div class="carousel-item">Django - Brototype (2024)</div>
+      <div class="carousel-item">React - Brototype (2025)</div>
+      <div class="carousel-item">PostgreSQL - Udemy (2024)</div>
+      <div class="carousel-item">UI/UX Designing - Udemy (2025)</div>
+      <div class="carousel-item">Data Structure - Brototype (2022)</div>
+      <div class="carousel-item">Web Development - Brototype (2022)</div>
+      <div class="carousel-item">Web Designing - Brototype (2021)</div>
+      <div class="carousel-item">Basic Coding - Brototype (2021)</div>
+      <div class="carousel-item">Bash - Udemy (2025)</div>
+      <div class="carousel-item">Git - Brototype (2021)</div>
       
       <div class="spacer" aria-hidden="true"></div>
     </div>
@@ -187,6 +434,30 @@
 
   </section>
   <section id="contact">
+    <div class="contacts">
+      <div class="p-headding">
+        <h1>CONTACT</h1>
+      </div>
+      <div class="cn-text">
+        <h1>Get In Touch</h1>
+        <p>Whether you’re looking to collaborate on a project, have an exciting opportunity, or just want to exchange ideas about web development, I’d love to hear from you. Feel free to reach out, and I’ll get back to you as soon as possible.</p>
+        <a href="">Say Hellow !</a>
+      </div>
+      <div class="cn-links">
+          <a href="https://www.linkedin.com/in/akhilesh-m-1835b6284/">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/Akhilesh286/">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+          <a href="https://www.instagram.com/akhilesh.muralii/">
+            <i class="bi bi-instagram"></i> Instagram
+          </a>
+          <a href="https://drive.google.com/uc?export=download&id=1rYB-G6Nt9wKmAHcH61SPGcMFPVF-tmwM">
+            <i class="bi bi-filetype-pdf"></i> Resume
+          </a>
+      </div>
+    </div>
     
   </section>
 </div>

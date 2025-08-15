@@ -1,71 +1,59 @@
 /* Global box-sizing */
 @import url(./base.css);
 
-
-
-
 :root {
-    /* Color Box */
-    --background: #0c0f17;
-    --foreground: rgba(255, 255, 255, 0.05);
-    --foreground-extra: #1A1E23;
+  /* Color Box */
+  --background: #0c0f17;
+  --foreground: rgba(255, 255, 255, 0.05);
+  --foreground-extra: #1a1e23;
 
-    /* Color Text */
-    --text-primary: #f5f5f5;
-    --text-secondary: #e0e0e0;
-    --text-muted: #3d5555;
+  /* Color Text */
+  --text-primary: #f5f5f5;
+  --text-secondary: #e0e0e0;
+  --text-muted: #3d5555;
 
+  /* Color Extra */
+  --primary: #00adb5;
+  --success: #44cc77;
+  --error: #992caa;
+  --warning: #eecc00;
 
-    /* Color Extra */
-    --primary: #00ADB5;
-    --success: #44cc77;
-    --error: #992caa;
-    --warning: #eecc00;
+  /* Font Family */
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
 
-    /* Font Family */
-    --font-primary: "Poppins", sans-serif;
-    --font-secondary: "Open Sans", sans-serif;
+  --font-size-hero: 3rem;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-subheading: 1.5rem;
+  --font-size-body: 1rem;
+  --font-size-caption: 0.75rem;
+  --font-size-button: 1rem;
 
-    --font-size-hero: 3rem;        
-    --font-size-h1: 2.5rem;        
-    --font-size-h2: 2rem;          
-    --font-size-subheading: 1.5rem;
-    --font-size-body: 1rem;        
-    --font-size-caption: 0.75rem;  
-    --font-size-button: 1rem;         
+  /* Font Weight */
+  --font-weight-hero: 800;
+  --font-weight-h1: 700;
+  --font-weight-h2: 600;
+  --font-weight-subheading: 500;
+  --font-weight-body: 400;
+  --font-weight-caption: 400;
+  --font-weight-button: 600;
+  --font-weight-nav: 500;
 
-    /* Font Weight */
-    --font-weight-hero: 800;
-    --font-weight-h1: 700;
-    --font-weight-h2: 600;
-    --font-weight-subheading: 500;
-    --font-weight-body: 400;
-    --font-weight-caption: 400;
-    --font-weight-button: 600;
-    --font-weight-nav: 500;
+  /* spacing */
+  --spacing-primary: 2rem;
+  --spacing-secondary: 4rem;
+  --spacing-base: 1rem;
+  --spacing-small: 0.5rem;
+  --spacing-xs: 0.25rem;
 
-    /* spacing */
-    --spacing-primary: 2rem;
-    --spacing-secondary: 4rem;
-    --spacing-base: 1rem;
-    --spacing-small: .5rem;
-    --spacing-xs: .25rem;
-    
-    /* border */
-    --border-radius: 5px;
-    --border-radius-full: 50px;
+  /* border */
+  --border-radius: 5px;
+  --border-radius-full: 50px;
 
-    --item-h: 5rem;   /* item height */
-    --visible: 3;      /* items visible at once */
-
+  --item-h: 5rem; /* item height */
+  --visible: 3; /* items visible at once */
 }
-
-
-
-
-
-
-
 
 /* ================= basic ================= */
 * {
@@ -88,9 +76,6 @@ body {
   grid-template-areas: "sidebar main";
   height: 100vh;
 }
-
-
-
 
 /* Left sidebar */
 .sidebar-left {
@@ -130,7 +115,6 @@ section {
   color: var(--primary);
 }
 
-
 /* Active nav item */
 .nav-item {
   padding: 10px;
@@ -143,19 +127,10 @@ section {
   color: var(--text-primary);
 }
 
-
 /* ================= section ================= */
 .card {
   /* background-color: var(--foreground-extra); */
-
 }
-
-
-
-
-
-
-
 
 /* ================= HERO section ================= */
 
@@ -177,7 +152,7 @@ section {
 .h-title > h1 {
   font-size: var(--font-size-hero);
 }
-.h-title > h1 > span{
+.h-title > h1 > span {
   color: var(--primary);
 }
 
@@ -211,9 +186,7 @@ section {
   align-self: flex-end;
 }
 
-
 /* ================= about section ================= */
-
 
 .about {
   display: flex;
@@ -239,15 +212,22 @@ section {
 
 /* ================= projects ================= */
 
-
 .projects {
   height: 100%;
   display: flex;
-  flex-direction: column;
   position: relative;
 }
 
+.p-headding {
+  position: absolute;
+  padding: 2rem;
+  top: 0;
+  left: 0;
+  color: var(--primary);
+}
+
 .p-btn {
+  align-self: flex-end;
   position: absolute;
   padding: 2rem;
   display: flex;
@@ -255,7 +235,8 @@ section {
   align-items: end;
   gap: 2rem;
   width: 100%;
-  height: 100%;
+  /* height: 50%; */
+  /* border: #00adb5 solid 2px; */
 }
 
 .p-btn > button {
@@ -264,7 +245,7 @@ section {
   color: var(--text-muted);
   font-size: var(--font-size-h2);
   border-radius: var(--border-radius);
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 .p-btn > button:hover {
   background-color: var(--foreground-extra);
@@ -293,13 +274,11 @@ section {
   position: relative;
   flex-shrink: 0;
   width: 90%;
-  background: var(--foreground); 
+  background: var(--foreground);
   padding: 1.5rem;
   border-radius: 10px;
   line-height: 1.6;
 }
-
-
 
 /* Date */
 .p-date {
@@ -310,7 +289,7 @@ section {
 /* Title & link style */
 .p-title {
   font-size: var(--font-size-subheading);
-  color: var(--primary);
+  color: var(--text-secondary);
   margin-top: 0.2rem;
   font-weight: var(--font-weight-button);
 }
@@ -318,9 +297,23 @@ section {
 /* Description */
 .p-description {
   font-size: var(--font-size-body);
-  color: var(--text-primary);
+  color: #777;
   margin: 0.6rem 0 1rem;
 }
+
+/* github link */
+
+.p-repo {
+  padding: var(--spacing-small);
+  margin-bottom: var(--spacing-small);
+  font-size: var(--font-size-caption);
+}
+.p-repo > a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+/* border: var(--primary) 2px solid;
+padding: var(--spacing-xs) var(--spacing-base); */
 
 /* Tags */
 .p-tags {
@@ -330,7 +323,7 @@ section {
 }
 
 .p-tags span {
-  background: RGBA(0, 173, 181, .15);
+  background: RGBA(0, 173, 181, 0.15);
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
   font-size: 0.8rem;
@@ -344,6 +337,8 @@ section {
   width: 100%;
   display: flex;
   flex-direction: column;
+  /* overflow: hidden; */
+  /* border: #00ADB5 2px solid; */
 }
 
 .s-navbar {
@@ -354,7 +349,7 @@ section {
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: space-around;
-  border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
 
@@ -371,19 +366,23 @@ section {
   border-bottom: 2px solid var(--primary);
 }
 
-.s-body  {
+/* .s-body  {
+  flex-grow: 1;
   padding: 1rem;
-  height: 100%;
   width: 100%;
 }
 
 .s-content {
   display: none;
-  height: 100%;
+  flex-grow: 1;
   width: 100%;
-  flex-wrap: wrap;
-  overflow-y: scroll;
-}
+  flex-direction: column;
+  justify-content: center;
+  
+} */
+
+/* border: #00ADB5 solid 2px; */
+/* align-items: center; */
 
 .s-c-text {
   flex: 1 1;
@@ -400,40 +399,98 @@ section {
   font-family: var(--font-secondary);
 }
 
-.s-c-skills {
+.s-body {
+  flex: 1 1 auto;
   display: flex;
-  flex: 1 1;
   flex-direction: column;
-  gap: 2rem;
+  min-height: 0;
   /* border: #00ADB5 solid 2px; */
-  justify-content: center;
-  align-items: center;
 }
 
+.s-content {
+  flex: 1 1 auto;
+  display: none;
+  flex-direction: column;
+  min-height: 0;
+  padding: 1rem;
+}
+
+/* .s-c-skills {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.s-c-skills-inner {
+  gap: 1rem;
+  border: 11px solid blue;
+  overflow-y: scroll;
+  width: 100%;
+} */
+
+/* .s-c-skills {
+  box-sizing: content-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: #00ADB5 solid 2px;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 50%;
+} */
+
+.s-c-skills {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.s-c-skills-inner {
+  /* height: fit-content; */
+  overflow-y: auto;
+  padding: 2rem;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  gap: var(--spacing-base);
+}
 
 .skill {
   width: 80%;
   display: flex;
-  /* border: #00ADB5 2px solid; */
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
+/* border: #00ADB5 2px solid; */
 .skill-label {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  font-size: var(--font-size-h1);
+  font-size: var(--font-size-subheading);
+  color: gray;
+  margin-bottom: 1rem;
 }
 
 .progress-bar {
   /* flex: 1; */
   /* flex-grow: 1; */
-  width: 350px;
+  width: 300px;
   background: var(--foreground);
   border-radius: 20px;
   overflow: hidden;
-  height: 10px;
+  height: 5px;
 }
 
 .progress-fill {
@@ -448,8 +505,12 @@ section {
 }
 
 @keyframes fillAnimation {
-  from { width: 0; }
-  to { width: var(--fill);}
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--fill);
+  }
 }
 
 /* ================= certificates ================= */
@@ -479,9 +540,9 @@ section {
 
 .c-text > h1 {
   font-size: var(--font-size-h2);
-  font-weight: var(--font-weight-caption);  
+  font-weight: var(--font-weight-caption);
   color: var(--primary);
-  letter-spacing: .2ch;
+  letter-spacing: 0.2ch;
 }
 
 /* The scrollable container */
@@ -493,11 +554,13 @@ section {
   /* border-radius: 12px; */
   /* border: 2px solid #222; */
   /* background: #fff; */
-  box-shadow: 0 6px 30px rgba(0,0,0,.08);
-  scrollbar-width: none;           /* Firefox hide scrollbar */
+  /* box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08); */
+  scrollbar-width: none; /* Firefox hide scrollbar */
   position: relative;
 }
-.carousel-container::-webkit-scrollbar { display: none; } /* WebKit hide scrollbar */
+.carousel-container::-webkit-scrollbar {
+  display: none;
+} /* WebKit hide scrollbar */
 
 /* We keep everything in a column with optional gap if you want spacing */
 /* .stack {
@@ -518,7 +581,6 @@ section {
   height: var(--item-h);
   padding: 2rem;
   flex: 0 0 auto;
-  display: grid;
   place-items: center;
   color: var(--text-muted);
   font-size: var(--font-size-body);
@@ -527,7 +589,7 @@ section {
   /* border-bottom: 1px solid rgba(255,255,255,.5); */
   scroll-snap-align: center;
   scroll-snap-stop: always; /* don’t skip items on fast scrolls */
-  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
   will-change: transform;
 }
 
@@ -541,46 +603,75 @@ section {
   font-weight: bold;
   color: var(--text-primary);
   transform: scale(1.02);
-  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); */
 }
-
-
 
 /* ================= contact ================= */
+.contacts {
+  position: relative;
+  /* border: #00ADB5 2px solid; */
+  height: 100%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+}
 
-.contact {
+.cn-text {
+  flex-grow: 1;
+  /* border: solid 2px blue; */
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  text-align: center;
+  gap: var(--spacing-base);
+  color: var(--text-muted);
 }
-
-.contact > input,textarea {
-  background-color: var(--foreground-extra);
+.cn-text > a {
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-button);
+  border-radius: var(--border-radius-full);
+  padding: var(--spacing-base) 3rem;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  text-decoration: none;
+}
+.cn-text > p {
+  width: 70%;
+}
+.cn-text > a:hover {
+  background-color: var(--primary);
+  color: var(--background);
+  transition: background-color 1s ease;
+}
+.cn-links {
+  /* flex: 1; */
+  border-top: var(--text-muted) solid 2px;
+  padding: var(--spacing-base);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--spacing-primary);
+}
+.cn-links > a > i {
+  font-size: var(--font-size-subheading);
+}
+.cn-links > a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: var(--font-size-body);
+}
+.cn-links > a:hover {
   color: var(--text-primary);
-  resize: none;
-  font-size: var(--font-size-body);
-  padding: 1rem;
-  border: gray 2px solid;
-  width: 50%;
-}
-.contact > input,textarea:focus{
-  outline: none;
-}
-
-.contact > button {
-  padding: 1rem;
-  font-size: var(--font-size-body);
-  width: 50%;
+  text-decoration: none;
 }
 
 /* ================= Responsive ================= */
 
 /* Tablet: Hide right sidebar, keep left */
 @media (max-width: 1024px) {
-  
   html {
     font-size: 14px;
   }
@@ -601,22 +692,22 @@ section {
 
 /* Mobile: Only main content */
 @media (max-width: 768px) {
-
   html {
     font-size: 12px;
   }
   body {
     grid-template-rows: auto 50px;
     grid-template-columns: 1fr;
-    grid-template-areas: "main"
-                          "sidebar";
+    grid-template-areas:
+      "main"
+      "sidebar";
     font-size: 14px;
   }
   .sidebar-left {
     flex-direction: row;
   }
 
-  .sidebar-left span{
+  .sidebar-left span {
     display: none;
   }
   .main-content {
@@ -631,10 +722,9 @@ section {
     flex-direction: column;
     padding: 1rem;
     padding-left: 1rem;
-
   }
   /* skills */
-  .s-c-text{
+  .s-c-text {
     flex-basis: 20rem;
   }
   .s-c-skills {
@@ -644,12 +734,11 @@ section {
   .certificates {
     display: flex;
     flex-direction: column;
-    
   }
   .c-text {
     height: auto;
     font-size: var(--font-size-subheading);
     justify-content: center;
-    border: #00ADB5 solid 2px;
+    border: #00adb5 solid 2px;
   }
 }
