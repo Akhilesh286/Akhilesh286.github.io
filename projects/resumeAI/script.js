@@ -2,65 +2,58 @@ tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
-                "colors": {
-                "primary": "#4F8DFF",
+            "colors": {
+                "background": "#0B101B",
+                "on-background": "#FFFFFF",
+
+                "surface": "#0F1523",
+                "on-surface": "#FFFFFF",
+
+                "surface-dim": "#0B101B",
+                "surface-bright": "#1A2235",
+
+                "surface-container-lowest": "#080D16",
+                "surface-container-low": "#0D1320",
+                "surface-container": "#111827",
+                "surface-container-high": "#1A2235",
+                "surface-container-highest": "#232C40",
+
+                "primary": "#2563EB",
                 "on-primary": "#FFFFFF",
-                "primary-container": "#3F78EE",
+                "primary-container": "#1D4ED8",
                 "on-primary-container": "#FFFFFF",
-                "primary-fixed": "#59A7FF",
-                "primary-fixed-dim": "#4F8DFF",
+
+                "primary-fixed": "#3B82F6",
+                "primary-fixed-dim": "#2563EB",
                 "on-primary-fixed": "#FFFFFF",
-                "on-primary-fixed-variant": "#DCE8FF",
+                "on-primary-fixed-variant": "#DBEAFE",
 
-                "secondary": "#131C34",
-                "on-secondary": "#FFFFFF",
-                "secondary-container": "#1A2440",
-                "on-secondary-container": "#B6BFD7",
-                "secondary-fixed": "#131C34",
-                "secondary-fixed-dim": "#1A2440",
-                "on-secondary-fixed": "#FFFFFF",
-                "on-secondary-fixed-variant": "#B6BFD7",
+                "secondary": "#9CA3AF",
+                "on-secondary": "#111827",
+                "secondary-container": "#1F2937",
+                "on-secondary-container": "#D1D5DB",
 
-                "tertiary": "#59A7FF",
+                "tertiary": "#6D28D9",
                 "on-tertiary": "#FFFFFF",
-                "tertiary-container": "#2B4D8C",
-                "on-tertiary-container": "#FFFFFF",
-                "tertiary-fixed": "#8BC0FF",
-                "tertiary-fixed-dim": "#59A7FF",
-                "on-tertiary-fixed": "#FFFFFF",
-                "on-tertiary-fixed-variant": "#DCE8FF",
+                "tertiary-container": "#4C1D95",
+                "on-tertiary-container": "#E9D5FF",
 
                 "error": "#EF4444",
                 "on-error": "#FFFFFF",
                 "error-container": "#7F1D1D",
                 "on-error-container": "#FECACA",
 
-                "background": "#060B22",
-                "on-background": "#FFFFFF",
+                "outline": "#2A3348",
+                "outline-variant": "#1F2937",
 
-                "surface": "#0D1630",
-                "on-surface": "#FFFFFF",
-
-                "surface-dim": "#060B22",
-                "surface-bright": "#1A2440",
-
-                "surface-container-lowest": "#050A20",
-                "surface-container-low": "#0D1630",
-                "surface-container": "#131C34",
-                "surface-container-high": "#1A2440",
-                "surface-container-highest": "#24304D",
-
-                "surface-variant": "#202B46",
-                "on-surface-variant": "#B6BFD7",
-
-                "outline": "#24304D",
-                "outline-variant": "#202B46",
+                "surface-variant": "#151D2F",
+                "on-surface-variant": "#9CA3AF",
 
                 "inverse-surface": "#FFFFFF",
-                "inverse-on-surface": "#131C34",
-                "inverse-primary": "#3F78EE",
+                "inverse-on-surface": "#111827",
+                "inverse-primary": "#1D4ED8",
 
-                "surface-tint": "#4F8DFF"
+                "surface-tint": "#2563EB"
                 },
             "borderRadius": {
                     "DEFAULT": "0.125rem",

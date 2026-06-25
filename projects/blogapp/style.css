@@ -1,6 +1,6 @@
 body {
-    background-color: #060B22;
-    color: #B6BFD7;
+    background-color: #252525;
+    color: #FFFFFF;
     scroll-behavior: smooth;
 }
 .material-symbols-outlined {
@@ -10,10 +10,10 @@ body {
     width: 4px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-    background: #171d1d;
+    background: #0D1320;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #3c494a;
+    background: #2A3348;
     border-radius: 10px;
 }
 .bento-grid {
@@ -24,19 +24,20 @@ body {
 .glass-card {
     background: linear-gradient(
         180deg,
-        rgba(19, 28, 52, 0.95) 0%,
-        rgba(13, 22, 48, 0.9) 100%
+        rgba(37, 37, 37, 0.95) 0%,
+        rgba(30, 30, 30, 0.88) 100%
     );
 
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
 
-    border: 1px solid rgba(36, 48, 77, 0.9);
-    border-radius: 12px;
+    border: 1px solid rgba(56, 88, 62, 0.6);
+
+    border-radius: 14px;
 
     box-shadow:
-        0 8px 24px rgba(0, 0, 0, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 .section-anchor {
     scroll-margin-top: 100px;
